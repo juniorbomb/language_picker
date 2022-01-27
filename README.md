@@ -13,8 +13,8 @@ Originally made by [@gomgom](https://github.com/gomgom) at https://pub.dev/packa
 
 ### Finding languages
 
-* by name: `Languages.korean`
-* by ISO code: `Language.fromIsoCode('fr')`
+* by name: `Languages.english`
+* by ISO code: `Language.fromIsoCode('en')`
 * preset languages: `Languages.defaultLanguages`
 
 ### Minimal example
@@ -32,7 +32,7 @@ LanguagePickerDropdown(
 
 ```dart
 LanguagePickerDropdown(
-  initialValue: Languages.korean,
+  initialValue: Languages.english,
   onValuePicked: (Language language) {
     print(language.name);
   })
@@ -97,7 +97,7 @@ Widget _buildDropdownItem(Language language) {
 
 // Builder
 LanguagePickerDropdown(
-  initialValue: Languages.korean,
+  initialValue: Languages.english,
   itemBuilder: _buildDropdownItem,
   onValuePicked: (Language language) {
     _selectedDropdownLanguage = language;
@@ -113,7 +113,7 @@ LanguagePickerDropdown(
 import 'package:language_picker/language.dart';
 import 'package:language_picker/language_picker.dart';
 
-Language _selectedDialogLanguage = Languages.korean;
+Language _selectedDialogLanguage = Languages.english;
 
 // It's sample code of Dialog Item.
 Widget _buildDialogItem(Language language) => Row(
@@ -149,7 +149,7 @@ void _openLanguagePickerDialog() => showDialog(
 import 'package:language_picker/language.dart';
 import 'package:language_picker/language_picker.dart';
 
-Language _selectedCupertinoLanguage = Languages.korean;
+Language _selectedCupertinoLanguage = Languages.english;
 
 // It's sample code of Cupertino Item.
 void _openCupertinoLanguagePicker() => showCupertinoModalPopup<void>(
