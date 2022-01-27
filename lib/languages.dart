@@ -20,4 +20,11 @@ class Language {
 
   @override
   int get hashCode => super.hashCode;
+
+  Map<String, dynamic> toJson() {
+    return {
+      "name": name,
+      "isoCode": isoCode,
+    };
+  }
 }
